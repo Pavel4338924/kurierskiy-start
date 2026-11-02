@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f1">
+  <title>Курьерский старт</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="kuper-video-bonuses">
+
+  <div class="page">
+    <header class="header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">К</span><span>Курьерский старт</span></div>
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="#work-conditions">Условия работы</a>
+        <a href="#income-calculator">Рассчитайте доход</a>
+      <a href="#referral-options">Приглашение Купера</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-note">Россия</span>
+        <a class="cta" href="#referral-options">Выбрать приглашение</a>
+      </div>
+    </header>
+
+    <main>
+  <section class="hero" aria-labelledby="hero-title-kuper">
+    <div class="hero-copy">
+      <div class="eyebrow">Приглашения для курьеров</div>
+      <h1 id="hero-title-kuper">Стартуйте курьером в Купере</h1>
+      <p class="hero-intro">Прикиньте доход, выберите удобный формат доставки и переходите к оформлению.</p>
+      <div class="hero-actions"><a class="cta" href="#referral-options">Открыть приглашение ↓</a></div>
+    </div>
+    <video class="video-scene" autoplay muted loop playsinline preload="auto" aria-label="Демонстрационный ролик о доставке">
+      <source src="courier-hero-demo.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section class="options" id="referral-options" aria-labelledby="bonuses-title-kuper">
+    <div class="section-head">
+      <div><span class="section-kicker">ПРИГЛАШЕНИЕ КУПЕРА</span><h2 id="bonuses-title-kuper">Старт в Купере</h2></div>
+      <p class="section-intro">Твой маршрут начинается с одного простого шага.</p>
+    </div>
+    <div class="option-grid">
+      <article class="option kuper-option invite-card">
+        <div class="service-name"><span class="service-dot" aria-hidden="true"></span>Купер</div>
+        <div class="invite-message"><span class="invite-mark" aria-hidden="true">↗</span><h3>Твой маршрут начинается здесь</h3></div>
+        <a class="cta" href="https://job.kuper.ru/referral-program?utm_source=ref_link&amp;utm_campaign=ffa60252-2cc7-458b-af3f-abcb8a680ded" target="_blank" rel="noopener">Перейти к приглашению&nbsp; ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="benefits-section" id="work-conditions" aria-labelledby="benefits-title">
+    <h2 id="benefits-title">Стать курьером — начать просто</h2>
+    <div class="benefits-grid">
+      <div class="benefits-list">
+        <article class="benefit-row"><span class="benefit-icon" aria-hidden="true">↗</span><div><h3>Выберите свой график</h3><p>Смотрите доступные смены и планируйте работу под свой ритм.</p></div></article>
+        <article class="benefit-row"><span class="benefit-icon" aria-hidden="true">⌁</span><div><h3>Подберите формат доставки</h3><p>Пешком, на велосипеде или автомобиле — зависит от города.</p></div></article>
+      <article class="benefit-row"><span class="benefit-icon" aria-hidden="true">✓</span><div><h3>Подготовьтесь к выходу</h3><p>Проверьте телефон, заряд и доступ к интернету перед маршрутом.</p></div></article>
+      </div>
+      <div class="benefits-cta">
+        <span class="section-kicker">СЛЕДУЮЩИЙ ШАГ</span>
+        <h3>Посмотрите условия и выберите приглашение</h3>
+        <a class="cta" href="#referral-options">Открыть приглашение ↓</a>
+        <p>Регистрация и подробности — на официальной странице сервиса.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="income-section" id="income-calculator" aria-labelledby="income-title">
+    <div class="income-copy">
+      <span class="section-kicker">ПЛАНИРУЙТЕ ГРАФИК</span>
+      <h2 id="income-title">Рассчитайте примерный доход</h2>
+      <p>Укажите свою оценку заработка за час и предполагаемый график. Калькулятор покажет ориентир на неделю и месяц.</p>
+      <p class="income-disclaimer">Это простой расчёт по введённым вами данным. Фактический доход зависит от города, заказов и условий сервиса.</p>
+    </div>
+    <form class="income-form" id="income-form">
+      <label class="field-label" for="income-rate">Выберите ожидаемый доход в час</label>
+      <div class="income-rate-control">
+        <input class="income-range" id="income-rate" name="rate" type="range" min="500" max="2000" step="100" value="500" aria-label="Доход в час от 500 до 2 000 рублей">
+        <output class="income-rate-value" id="income-rate-value" for="income-rate">500 ₽</output>
+      </div>
+      <div class="income-range-labels" aria-hidden="true"><span>500 ₽</span><span>2 000 ₽</span></div>
+      <div class="income-fields-row">
+        <label class="field-label" for="income-hours">Часов в день<input class="income-input" id="income-hours" name="hours" type="number" min="1" max="24" value="6" inputmode="numeric" required></label>
+        <label class="field-label" for="income-days">Дней в неделю<input class="income-input" id="income-days" name="days" type="number" min="1" max="7" value="5" inputmode="numeric" required></label>
+      </div>
+      <button class="cta income-submit" type="submit">Посчитать доход</button>
+      <output class="income-result" id="income-result" aria-live="polite">Введите свои данные — и получите ориентир.</output>
+    </form>
+  </section>
+
+  <section class="formats-section" aria-labelledby="formats-title">
+    <div class="section-head centered-head">
+      <div><span class="section-kicker">ВЫБЕРИТЕ СВОЙ ФОРМАТ</span><h2 id="formats-title">Как вам удобнее доставлять?</h2></div>
+      <p class="section-intro">Доступные варианты зависят от города и выбранного сервиса.</p>
+    </div>
+    <div class="format-grid">
+      <article class="format-card format-bike"><div class="format-art"><span class="format-number">ВЕЛОСИПЕД</span><span class="format-emoji" aria-hidden="true">🚲</span><span class="format-sun"></span><span class="format-buildings"></span></div><div class="format-caption"><h3>На велосипеде</h3><p>Для тех, кто любит движение и короткие маршруты.</p></div></article>
+      <article class="format-card format-walk"><div class="format-art"><span class="format-number">ПЕШКОМ</span><span class="format-emoji" aria-hidden="true">🎒</span><span class="format-sun"></span><span class="format-buildings"></span></div><div class="format-caption"><h3>Пешком</h3><p>Узнайте, доступны ли пешие заказы в вашем районе.</p></div></article>
+      <article class="format-card format-car"><div class="format-art"><span class="format-number">НА АВТО</span><span class="format-emoji" aria-hidden="true">🚗</span><span class="format-sun"></span><span class="format-buildings"></span></div><div class="format-caption"><h3>На автомобиле</h3><p>Проверьте, доступен ли формат в выбранном сервисе.</p></div></article>
+    </div>
+  </section>
+
+  <section class="prep-section" aria-labelledby="prep-title">
+    <div class="prep-heading">
+      <div><span class="section-kicker">ПЕРЕД ОФОРМЛЕНИЕМ</span><h2 id="prep-title">Подготовьтесь к старту</h2></div>
+      <p>Три простых шага помогут заранее разобраться в условиях и выбрать подходящий формат.</p>
+    </div>
+    <div class="prep-grid">
+      <article class="prep-card"><span class="prep-icon" aria-hidden="true">⌖</span><h3>Уточните город</h3><p>Доступные районы и форматы доставки могут различаться. Проверьте их при оформлении.</p></article>
+      <article class="prep-card"><span class="prep-icon" aria-hidden="true">▣</span><h3>Подготовьте документы</h3><p>Точный список требований появится на странице заявки Купера.</p></article>
+      <article class="prep-card"><span class="prep-icon" aria-hidden="true">◷</span><h3>Продумайте график</h3><p>Посчитайте удобное количество часов и дней в калькуляторе выше.</p></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="steps-title-kuper">
+    <span class="section-kicker">ТРИ ШАГА ДО СТАРТА</span>
+    <h2 id="steps-title-kuper">Как перейти к оформлению</h2>
+    <div class="step-grid">
+      <article class="step"><span class="step-no">1</span><h3>Откройте приглашение</h3><p>Перейдите на страницу Купера по ссылке.</p></article>
+      <article class="step"><span class="step-no">2</span><h3>Уточните условия</h3><p>Проверьте требования и форматы доставки в своём городе.</p></article>
+      <article class="step"><span class="step-no">3</span><h3>Заполните заявку</h3><p>Продолжите оформление на странице сервиса.</p></article>
+    </div>
+  </section>
+
+  <section class="news-section" id="courier-news" aria-labelledby="news-title">
+    <div class="news-heading"><div><span class="section-kicker">ПОЛЕЗНОЕ ДЛЯ РАБОТЫ</span><h2 id="news-title">Новости и советы курьерам</h2></div><p>Подборка тем, которые помогут подготовиться к работе и выбрать удобный график.</p></div>
+    <div class="news-carousel">
+      <button class="carousel-arrow" type="button" data-news-prev aria-label="Предыдущие материалы">‹</button>
+      <div class="news-viewport"><div class="news-track">
+        <article class="news-card"><div class="news-art news-art-one"><span class="news-art-tag">ГРАФИК</span><span class="news-art-emoji" aria-hidden="true">🗓️</span><span class="news-art-horizon"></span></div><span class="news-tag">ПОЛЕЗНО</span><h3>Плановый и свободный график: как выбрать удобный вариант</h3><p>На что обратить внимание, когда планируете рабочее время.</p></article>
+        <article class="news-card"><div class="news-art news-art-two"><span class="news-art-tag">НА СТАРТЕ</span><span class="news-art-emoji" aria-hidden="true">🎒</span><span class="news-art-horizon"></span></div><span class="news-tag">ПОЛЕЗНО</span><h3>Что подготовить перед первым выходом на линию</h3><p>Короткий список вещей и вопросов, которые стоит проверить заранее.</p></article>
+        <article class="news-card"><div class="news-art news-art-three"><span class="news-art-tag">МАРШРУТЫ</span><span class="news-art-emoji" aria-hidden="true">🚲</span><span class="news-art-horizon"></span></div><span class="news-tag">ФОРМАТЫ</span><h3>Пешком, на велосипеде или на авто: как выбрать</h3><p>Сравните варианты доставки и учитывайте доступность в своём городе.</p></article>
+        <article class="news-card"><div class="news-art news-art-four"><span class="news-art-tag">ДОКУМЕНТЫ</span><span class="news-art-emoji" aria-hidden="true">📋</span><span class="news-art-horizon"></span></div><span class="news-tag">ПОДГОТОВКА</span><h3>Какие данные понадобятся при оформлении</h3><p>Посмотрите список требований на странице выбранного сервиса.</p></article>
+        <article class="news-card"><div class="news-art news-art-five"><span class="news-art-tag">ДОХОД</span><span class="news-art-emoji">₽</span><span class="news-art-horizon"></span></div><span class="news-tag">ПЛАНИРОВАНИЕ</span><h3>Как прикинуть заработок под свой график</h3><p>Оцените время на работу и внесите собственные ожидания в калькулятор.</p></article>
+        <article class="news-card"><div class="news-art news-art-six"><span class="news-art-tag">ПЕРЕД СТАРТОМ</span><span class="news-art-emoji" aria-hidden="true">🧭</span><span class="news-art-horizon"></span></div><span class="news-tag">ПОДГОТОВКА</span><h3>Что проверить перед отправкой заявки</h3><p>Убедитесь, что выбрали свой город и удобный формат доставки.</p></article>
+      </div></div>
+      <button class="carousel-arrow" type="button" data-news-next aria-label="Следующие материалы">›</button>
+    </div>
+    <div class="news-carousel-footer"><span class="news-counter">6 материалов для знакомства с работой</span><div class="news-dots" aria-label="Выбрать материал">
+      <button type="button" class="news-dot is-active" aria-label="Материал 1" data-news-dot="0"></button><button type="button" class="news-dot" aria-label="Материал 2" data-news-dot="1"></button><button type="button" class="news-dot" aria-label="Материал 3" data-news-dot="2"></button><button type="button" class="news-dot" aria-label="Материал 4" data-news-dot="3"></button><button type="button" class="news-dot" aria-label="Материал 5" data-news-dot="4"></button><button type="button" class="news-dot" aria-label="Материал 6" data-news-dot="5"></button>
+    </div></div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="faq-title">
+    <div class="faq-heading">
+      <span class="section-kicker">КОРОТКО О ГЛАВНОМ</span>
+      <h2 id="faq-title">Частые вопросы</h2>
+      <p>Перед переходом по приглашению проверьте основные детали.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary>Как перейти по приглашению?</summary><p>Нажмите на кнопку Купера и продолжите оформление на открывшейся официальной странице.</p></details>
+      <details class="faq-item"><summary>От чего зависит доход курьера?</summary><p>От города, доступных заказов, графика и действующих условий. Калькулятор на сайте показывает только ориентир по введённым вами данным.</p></details>
+      <details class="faq-item"><summary>Какие форматы доставки доступны?</summary><p>Это зависит от города и условий Купера. Актуальные варианты появятся при оформлении заявки.</p></details>
+      <details class="faq-item"><summary>Что откроется по ссылке?</summary><p>Страница Купера с дальнейшими шагами для оформления заявки.</p></details>
+    </div>
+  </section>
+
+  <section class="bottom-cta" aria-label="Перейти на страницу приглашения">
+    <div><h2>Готовы начать?</h2><p>Откройте приглашение Купера и проверьте условия для своего города.</p></div>
+    <a class="cta" href="#referral-options">Перейти к приглашению ↓</a>
+  </section>
+</main>
+<script>
+  (() => {
+    const root = document.querySelector('#kuper-video-bonuses');
+    if (!root) return;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    root.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const target = root.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+      });
+    });
+    const form = root.querySelector('#income-form');
+    const result = root.querySelector('#income-result');
+    const rubles = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 });
+  const rateInput = root.querySelector('#income-rate');
+  const rateValue = root.querySelector('#income-rate-value');
+  const updateRateValue = () => { rateValue.textContent = rubles.format(Number(rateInput.value)) + ' ₽'; };
+  rateInput.addEventListener('input', updateRateValue);
+  updateRateValue();
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const rate = Number(root.querySelector('#income-rate').value);
+      const hours = Number(root.querySelector('#income-hours').value);
+      const days = Number(root.querySelector('#income-days').value);
+      const week = rate * hours * days;
+      const month = week * 4.33;
+      result.innerHTML = 'Примерно <strong>' + rubles.format(week) + ' ₽ в неделю</strong><br>или <strong>' + rubles.format(month) + ' ₽ в месяц</strong>';
+    });
+    const track = root.querySelector('.news-track');
+    const cards = Array.from(root.querySelectorAll('.news-card'));
+    const dots = Array.from(root.querySelectorAll('[data-news-dot]'));
+    const gap = () => parseFloat(getComputedStyle(track).gap || 0);
+    const cardStep = () => (cards[0]?.getBoundingClientRect().width || 0) + gap();
+    const setActive = () => {
+      const index = Math.max(0, Math.min(cards.length - 1, Math.round(track.scrollLeft / cardStep())));
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+    };
+    root.querySelector('[data-news-prev]').addEventListener('click', () => track.scrollBy({ left: -cardStep(), behavior: reducedMotion ? 'auto' : 'smooth' }));
+    root.querySelector('[data-news-next]').addEventListener('click', () => track.scrollBy({ left: cardStep(), behavior: reducedMotion ? 'auto' : 'smooth' }));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => track.scrollTo({ left: i * cardStep(), behavior: reducedMotion ? 'auto' : 'smooth' })));
+    track.addEventListener('scroll', setActive, { passive: true });
+    window.addEventListener('resize', setActive);
+  })();
+</script>
+
+
+    <footer class="footer">
+      <span>Курьерский старт</span>
+      <span>Проверьте актуальные условия выбранного сервиса перед регистрацией</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
