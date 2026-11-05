@@ -679,7 +679,7 @@ body { background: light-dark(#f7f7f1, #151814); }
         inset: 0;
         width: 100%;
         height: 100%;
-        object-position: 62% center;
+        object-position: 86% center;
       }
       #kuper-video-bonuses .video-scene::before {
         top: 8px;
@@ -1384,10 +1384,10 @@ body { background: light-dark(#f7f7f1, #151814); }
 @media (max-width: 700px) {
   #kuper-video-bonuses .option-grid .invite-card { display: flex; min-height: 330px; }
   #kuper-video-bonuses .option-grid .invite-card .service-name { margin-bottom: 20px; }
-  #kuper-video-bonuses .invite-message { gap: 16px; }
+  #kuper-video-bonuses .invite-message { gap: 12px; }
   #kuper-video-bonuses .invite-message h3 { font-size: clamp(31px, 8vw, 42px); }
-  #kuper-video-bonuses .invite-mark { width: 58px; height: 58px; flex-basis: 58px; border-radius: 18px; }
-  #kuper-video-bonuses .invite-mark svg { width: 46px; height: 46px; }
+  #kuper-video-bonuses .invite-mark { width: 64px; height: 64px; flex-basis: 64px; border-radius: 18px; }
+  #kuper-video-bonuses .invite-mark svg { width: 54px; height: 54px; }
   #kuper-video-bonuses .option-grid .invite-card .cta { width: 100%; min-width: 0; min-height: 60px; margin-top: auto; font-size: 17px; }
 }
 @media (max-width: 600px) {
